@@ -2,46 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
     <title>Spotify</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="images/Logo/Spotify_logo_without_text.svg" type="image/x-icon">
 </head>
 <body>
-    <header class="d-flex align-items-center">
+    <header class="container-fluid">
         <!--Menu Options-->
-        <section class="">
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" id="menubutton"><img src="images/Icones/spotify.svg" alt=""></button>
-            
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="menuoptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <p></p>
-                </div>
-            </div>  
-        </section>
-        <!-------------->
+        <button id="menubtn" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="images/Icones/spotify.svg" alt=""></button>
 
-        <!--Header-->
-        <section class="container">
-            <div class="" id="featured">
-                <nav>
-                    <ul class="d-flex gap-5 ">
-                        <li><a href="">FEATURED</a></li>
-                        <li><a href="" aria-disabled="true">GENDERS & MOODS</a></li>
-                        <li><a href="" aria-disabled="true">NEW RELEASES</a></li>
-                        <li><a href="" aria-disabled="true">DISCOVER</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-        </section>
-        <!---------->
-
+<div class="menu offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <img src="images/Icones/spotify.svg" alt="">
+  </div>
+  <div class="menu offcanvas-body">
+    <input type="search" placeholder="Search">
+  </div>
+</div>        
+        <!---------------->
     </header>
     <main></main>
     <footer></footer>
